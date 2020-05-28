@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Categoria">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/common_google_signin_btn_text_light_default"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:fontFamily="serif"
+                android:text="Helping-Us"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="45dp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/tvCateg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#ffffff"
+                android:gravity="center"
+                android:text="Categorias de servicios"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="18sp" />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pb1"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="80dp"
+                android:visibility="gone"
+                />
+
+            <Spinner
+                android:id="@+id/spCat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="#ffffff"
+                android:popupBackground="#E8914D04"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnValidar"
+                android:layout_width="202dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/cajas"
+                android:gravity="center"
+                android:text="Validar"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+            <!--            /////////////////////////////////////////////////////////////  automotriz  ////////////////////////////////////// -->
+            <TableLayout
+                android:id="@+id/tbMeca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chMeca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mecánica"
+                        android:checked="true"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chSolda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Soldadura"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chTorno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Torno"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  >
+
+                    <CheckBox
+                        android:id="@+id/chBalanc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balanceo"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chPint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pintura"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chLlantera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Llantera"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  >
+
+                    <CheckBox
+                        android:id="@+id/chRad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Radiadores"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chFric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fricciones"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chElect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Electricidad"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  >
+
+                    <CheckBox
+                        android:id="@+id/chStiker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stiker"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chPolari"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Polarizado"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </TableRow>
+            </TableLayout>
+            <!--            /////////////////////////////////////////////////////////////  motos  ////////////////////////////////////// -->
+            <TableLayout
+            android:id="@+id/tbMotos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <CheckBox
+                    android:id="@+id/chMecaM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mecánica"
+                    android:textAlignment="textStart"
+                    android:checked="true"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/chElecM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electridad"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"  >
+
+                <CheckBox
+                    android:id="@+id/chOtrosM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Otros Servicios de Motocicleta"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+                <CheckBox
+                    android:id="@+id/chLlanteraM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Llantera"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+            </TableRow>
+            </TableLayout>
+            <!--            /////////////////////////////////////////////////////////////  soldadura  ////////////////////////////////////// -->
+            <TableLayout
+                android:id="@+id/tbSolda"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:visibility="gone"
+
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chSolIndus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Industrial"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:checked="true"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chSolAgri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agrícola"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                    <CheckBox
+                        android:id="@+id/chAutoge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Autogena"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  >
+
+                    <CheckBox
+                        android:id="@+id/chBalconeria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Balconeria"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </TableRow>
+            </TableLayout>
+<!--            /////////////////////////////////////////////////////////////  hogar  ////////////////////////////////////// -->
+            <TableLayout
+                android:id="@+id/tbHogar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chElectri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Electricidad"
+                        android:checked="true"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chCerrajeria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cerrajeria"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chFontaneria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fontaneria"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  >
+
+                    <CheckBox
+                        android:id="@+id/chJardine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jardineria"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chLimpieza"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Limpieza"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chFumiga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fumigación"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  >
+
+                    <CheckBox
+                        android:id="@+id/chEstilis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estilista"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chNinera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Niñera"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chZapa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zapateria"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TabHost>
+
+                        <CheckBox
+                            android:id="@+id/chElectrod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reparaciones"
+                            android:textAlignment="textStart"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+                    </TabHost>
+
+
+                </TableRow>
+            </TableLayout>
+<!--            ************************************comida/////////////////////////////-->
+            <TableLayout
+                android:id="@+id/tbcomidas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+                <CheckBox
+                    android:id="@+id/chRapidas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comidas Rápidas"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/chReposteria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reposterias"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/chsopas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sopas"
+                    android:textAlignment="textStart"
+                    android:checked="true"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"  >
+
+                <CheckBox
+                    android:id="@+id/chmarinera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comida marinera"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+                <CheckBox
+                    android:id="@+id/chAlmuerzo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Almuerzo"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+                <CheckBox
+                    android:id="@+id/chGolo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Golocinas"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+            </TableRow>
+            </TableLayout>
+           <!--            /////////////////////////////////////////////////////////////  developer  ////////////////////////////////////// -->
+            <TableLayout
+                android:id="@+id/tbDeveloper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chEscritorio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App escritorio"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:checked="true"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chWeb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App Web"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                    <CheckBox
+                        android:id="@+id/chMovil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App Movil"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+            </TableLayout>
+<!--        ///////////////////////////////////////////////////////////////serv. informaticos//////////    -->
+            <TableLayout
+                android:id="@+id/tbInforma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone"
+
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chTecni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Servicio técnico"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:checked="true"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chAudio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Audio y Video"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chCamaras"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Camaras"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chRedes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Redes"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </TableRow>
+            </TableLayout>
+            <!--            /////////////////////////////////////////////////////////////  educacion  ////////////////////////////////////// -->
+            <TableLayout
+                android:id="@+id/tbEducacion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chCapasita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Capasitación"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:checked="true"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/chMaestro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maestro en casa"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"  >
+
+                    <CheckBox
+                        android:id="@+id/chOtrosEdu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Otros Educación"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                    <CheckBox
+                        android:id="@+id/chCursos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cursos"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </TableRow>
+            </TableLayout>
+            <!--            /////////////////////////////////////////////////////////////  diseño y publicidad  ////////////////////////////////////// -->
+            <TableLayout
+                android:id="@+id/tbDiseno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chPublicidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Publicidad"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:checked="true"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/chDiseno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diseño"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+            </TableLayout>
+            <!--            /////////////////////////////////////////////////////////////  diseño y publicidad  ////////////////////////////////////// -->
+            <TableLayout
+                android:id="@+id/tbMandadito"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chMotoMan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Motocicleta"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:checked="true"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+
+                    <CheckBox
+                        android:id="@+id/chAutoM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Auto"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+            </TableLayout>
+            <!--            /////////////////////////////////////////////////////////////  transporte  ////////////////////////////////////// -->
+            <TableLayout
+                android:id="@+id/tbTransporte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chTaxi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taxi"
+                        android:checked="true"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chCamiones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Camiones"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                    <CheckBox
+                        android:id="@+id/chBuses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buses"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chGrua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gruas"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chMudanza"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mudanzas"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                    <CheckBox
+                        android:id="@+id/chOtrosTran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Otros Transporte"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+            </TableLayout>
+
+            <!--            /////////////////////////////////////////////////////////////  salud  ////////////////////////////////////// -->
+            <TableLayout
+                android:id="@+id/tbSalud"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chEnfermera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enfermeria"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                    <CheckBox
+                        android:id="@+id/chExamenes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Examenes de laboratorio"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chAmbulan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ambulancia"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chVeteri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Veterinaria"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chMedico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medico"
+                        android:checked="true"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+            </TableLayout>
+<!--  ///////////////////////////////////////////////////////eventos  -*************************          -->
+            <TableLayout
+                android:id="@+id/tbEvento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chDisco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disco movil"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                    <CheckBox
+                        android:id="@+id/chAnimacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Animación"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chDecoracion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Decoraciones"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chFotografo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fotografía"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+            </TableLayout>
+            <!--  ///////////////////////////////////////////////////////construccion  -*************************          -->
+            <TableLayout
+                android:id="@+id/tbConstruc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chLadrillo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ladrillos"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                    <CheckBox
+                        android:id="@+id/chBloque"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bloques"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <CheckBox
+                        android:id="@+id/chAlbanil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Albañiles"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/chTabla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tabla Yeso"
+                        android:layout_marginEnd="5dp"
+                        android:textAlignment="textStart"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+
+                android:id="@+id/btnEnviar"
+                android:layout_width="274dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/cajas"
+                android:gravity="center"
+                android:text="Enviar"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                tools:visibility="gone" />
+            <Button
+
+                android:id="@+id/btnCerrar"
+                android:layout_width="274dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/cajas"
+                android:gravity="center"
+                android:text="Cerrar Sesión"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                tools:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

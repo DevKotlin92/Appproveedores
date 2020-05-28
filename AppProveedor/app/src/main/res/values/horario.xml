@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="horarios">
+        <item>Horarios</item>
+        <item>8am-5pm</item>
+        <item>8am-7pm</item>
+        <item>12pm-5pm</item>
+        <item>12pm-10pm</item>
+        <item>24 hrs</item>
+    </string-array>
+
+</resources>
